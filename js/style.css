@@ -13,7 +13,7 @@ body {
 
 body, .controls, .controls > div, .customize div, .customize label { display: flex; }
 body, .controls, .customize div { flex-direction: column; }
-body, .controls, .controls > div:first-of-type, .customize label { align-items: center; }
+body, .controls, .controls > div:first-of-type, .customize label, .cell { align-items: center; }
 
 .controls {
 	width: 100%;
@@ -101,3 +101,31 @@ body, .controls, .controls > div:first-of-type, .customize label { align-items: 
 .color-picker::-webkit-color-swatch-wrapper { padding: 0; }
 .color-picker::-webkit-color-swatch { border: none; }
 
+.board {
+	width: fit-content;
+	height: fit-content;
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+	justify-content: center;
+	color: var(--board-color);
+	border: 3px solid var(--board-color);
+}
+
+.available { cursor: pointer; }
+
+.cell:nth-child(-n + 3) { border-top-color: transparent; }
+.cell:nth-child(n + 7) { border-bottom-color: transparent; }
+.cell:nth-child(3n + 1) { border-left-color: transparent; }
+.cell:nth-child(3n) { border-right-color: transparent; }
+
+.cell .material-symbols-outlined { font-size: 5rem; }
+
+.hidden {
+	margin: 0;
+	display: none;
+}
