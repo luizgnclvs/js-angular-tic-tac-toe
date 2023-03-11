@@ -11,9 +11,9 @@ body {
 	background-color: var(--bg-color);
 }
 
-body, .controls, .controls > div { display: flex; }
-body, .controls { flex-direction: column; }
-body, .controls, .controls > div:first-of-type { align-items: center; }
+body, .controls, .controls > div, .customize div, .customize label { display: flex; }
+body, .controls, .customize div { flex-direction: column; }
+body, .controls, .controls > div:first-of-type, .customize label { align-items: center; }
 
 .controls {
 	width: 100%;
@@ -39,7 +39,7 @@ body, .controls, .controls > div:first-of-type { align-items: center; }
 	 stroke-width: 6px;
 }
 
-.controls button {
+.controls button, .customize {
 	appearance: none;
 	padding: 4px 8px;
 	text-transform: uppercase;
@@ -57,7 +57,7 @@ body, .controls, .controls > div:first-of-type { align-items: center; }
 	outline: 2px solid var(--board-color);
 }
 
-.controls button {
+.controls button, .customize {
 	font-size: 1.2rem;
 	font-weight: 600;
 }
@@ -80,3 +80,24 @@ body, .controls, .controls > div:first-of-type { align-items: center; }
 	top: 4px;
 	font-weight: bolder;
 }
+
+.customize {
+	gap: 25px;
+	text-transform: capitalize;
+	color: var(--board-color);
+}
+
+.customize div, .customize label { gap: 5px; }
+.customize label, .color-picker::-webkit-color-swatch { cursor: pointer; }
+
+.color-picker {
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	border: 2px solid var(--board-color);
+}
+
+.color-picker::-webkit-color-swatch-wrapper { padding: 0; }
+.color-picker::-webkit-color-swatch { border: none; }
+
