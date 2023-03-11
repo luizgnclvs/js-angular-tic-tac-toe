@@ -11,7 +11,7 @@ body {
 	background-color: var(--bg-color);
 }
 
-body, .controls, .controls > div, .customize div, .customize label { display: flex; }
+body, .controls, .controls > div, .customize div, .customize label, .cell { display: flex; }
 body, .controls, .customize div { flex-direction: column; }
 body, .controls, .controls > div:first-of-type, .customize, .customize label, .cell { align-items: center; }
 
