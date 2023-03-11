@@ -13,7 +13,7 @@ body {
 
 body, .controls, .controls > div, .customize div, .customize label { display: flex; }
 body, .controls, .customize div { flex-direction: column; }
-body, .controls, .controls > div:first-of-type, .customize label, .cell { align-items: center; }
+body, .controls, .controls > div:first-of-type, .customize, .customize label, .cell { align-items: center; }
 
 .controls {
 	width: 100%;
@@ -39,8 +39,9 @@ body, .controls, .controls > div:first-of-type, .customize label, .cell { align-
 	 stroke-width: 6px;
 }
 
-.controls button, .customize {
+.controls button, .customize button {
 	appearance: none;
+  height: fit-content;
 	padding: 4px 8px;
 	text-transform: uppercase;
 	color: var(--board-color);
