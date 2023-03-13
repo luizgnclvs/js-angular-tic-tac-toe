@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	user-select: none;
+
+	--bg-color: #292929;
+	--board-color: #969696;
+}
+
+body { background-color: var(--bg-color); }
