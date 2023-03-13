@@ -1,0 +1,29 @@
+div {
+	height: fit-content;
+	min-height: 84px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	appearance: none;
+	padding: 4px 8px;
+	margin: 10px 0;
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: var(--board-color);
+	background-color: var(--bg-color);
+	border: 2px solid var(--board-color);
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+button:hover {
+	color: var(--bg-color);
+	background-color: var(--board-color);
+	border-color: var(--bg-color);
+	outline: 2px solid var(--board-color);
+}

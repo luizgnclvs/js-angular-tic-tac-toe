@@ -1,0 +1,12 @@
+<div *ngIf="!hidden">
+	{{ message.start }}
+
+	<span
+		*ngIf="message.mark"
+		class="material-symbols-outlined"
+	>
+		{{ message.mark }}
+	</span>
+
+	{{ message.end }}
+</div>

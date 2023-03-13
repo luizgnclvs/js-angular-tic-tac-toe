@@ -1,0 +1,13 @@
+<div>
+	<app-turn-display
+		[hidden]="hideTurnDisplay"
+		[message]="service.message"
+	></app-turn-display>
+	<button
+		*ngIf="!hideButton"
+		type="button"
+		(click)="startNewGame()"
+	>
+		{{ buttonText }}
+	</button>
+</div>
