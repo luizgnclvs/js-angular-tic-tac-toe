@@ -1,0 +1,17 @@
+svg {
+	height: 2.5rem;
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+text {
+	fill: var(--board-color);
+	stroke: var(--bg-color);
+	stroke-width: 3px;
+	stroke-linejoin: round;
+}
+
+text.outline {
+	stroke: var(--board-color);
+	stroke-width: 6px;
+}
