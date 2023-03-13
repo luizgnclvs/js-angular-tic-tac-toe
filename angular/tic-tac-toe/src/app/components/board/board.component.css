@@ -1,0 +1,7 @@
+div {
+	width: fit-content;
+	height: fit-content;
+	margin: 25px 0;
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}

@@ -1,0 +1,8 @@
+<div>
+	<app-cell
+		*ngFor="let cell of service.cellList"
+		[cell]="cell"
+		[gameOngoing]="service.gameOngoing"
+		(play)="service.makeMove($event)"
+	></app-cell> 
+</div>

@@ -1,0 +1,14 @@
+<div
+	[class.available]="cell.available && gameOngoing"
+	[class.win-x]="cell.win && cell.mark === 'close'"
+	[class.win-o]="cell.win && cell.mark === 'radio_button_unchecked'"
+	[class.top-row]="cell.row === 1"
+	[class.bottom-row]="cell.row === 3"
+	[class.left-column]="cell.column === 1"
+	[class.right-column]="cell.column === 3"
+	(click)="handleClick()"
+>
+	<span class="material-symbols-outlined">
+		{{cell.mark}}
+	</span>
+</div>

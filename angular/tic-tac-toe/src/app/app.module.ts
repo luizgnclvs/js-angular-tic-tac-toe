@@ -7,6 +7,8 @@ import { TurnDisplayComponent } from './components/turn-display/turn-display.com
 import { ControlPanelComponent } from './components/control-panel/control-panel.component';
 import { ColorPickerComponent } from './components/color-picker/color-picker.component';
 import { CustomizePanelComponent } from './components/customize-panel/customize-panel.component';
+import { CellComponent } from './components/cell/cell.component';
+import { BoardComponent } from './components/board/board.component';
 
 @NgModule({
 	declarations: [
@@ -15,7 +17,9 @@ import { CustomizePanelComponent } from './components/customize-panel/customize-
   TurnDisplayComponent,
   ControlPanelComponent,
   ColorPickerComponent,
-  CustomizePanelComponent
+  CustomizePanelComponent,
+  CellComponent,
+  BoardComponent
 	],
 	imports: [
 		BrowserModule
