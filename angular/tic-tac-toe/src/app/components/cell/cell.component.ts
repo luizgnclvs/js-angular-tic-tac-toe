@@ -9,7 +9,7 @@ import { Cell } from 'src/app/models/cell';
 })
 export class CellComponent {
 	@Input() cell!: Cell;
-	@Input() gameOngoing!: boolean;
+	@Input() gameOnGoing!: boolean;
 
 	@Output() play = new EventEmitter<Cell>();
 

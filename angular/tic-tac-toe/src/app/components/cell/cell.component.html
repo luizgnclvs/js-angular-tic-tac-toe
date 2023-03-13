@@ -1,5 +1,5 @@
 <div
-	[class.available]="cell.available && gameOngoing"
+	[class.available]="cell.available && gameOnGoing"
 	[class.win-x]="cell.win && cell.mark === 'close'"
 	[class.win-o]="cell.win && cell.mark === 'radio_button_unchecked'"
 	[class.top-row]="cell.row === 1"
