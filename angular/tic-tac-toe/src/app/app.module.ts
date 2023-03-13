@@ -13,13 +13,13 @@ import { BoardComponent } from './components/board/board.component';
 @NgModule({
 	declarations: [
 		AppComponent,
+		BoardComponent,
+		CellComponent,
+		ColorPickerComponent,
+		ControlPanelComponent,
+		CustomizePanelComponent,
 		TitleComponent,
-  TurnDisplayComponent,
-  ControlPanelComponent,
-  ColorPickerComponent,
-  CustomizePanelComponent,
-  CellComponent,
-  BoardComponent
+		TurnDisplayComponent
 	],
 	imports: [
 		BrowserModule
