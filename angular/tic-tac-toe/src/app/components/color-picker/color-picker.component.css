@@ -1,0 +1,22 @@
+div {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	gap: 5px;
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-transform: capitalize;
+	color: var(--board-color);
+}
+
+input {
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	border: 2px solid var(--board-color);
+}
+
+label, input::-webkit-color-swatch { cursor: pointer; }
+input::-webkit-color-swatch-wrapper { padding: 0; }
+input::-webkit-color-swatch { border: none; }

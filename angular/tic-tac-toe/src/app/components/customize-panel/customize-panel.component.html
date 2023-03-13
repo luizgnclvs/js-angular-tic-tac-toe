@@ -1,0 +1,17 @@
+<div class="container">
+	<div>
+		<app-color-picker
+			[property]="backgroundProperty"
+			[defaultValue]="DEFAULT_BACKGROUND"
+			(colorChange)="changePropertyColor($event)"
+		></app-color-picker>
+		<app-color-picker
+			[property]="boardProperty"
+			[defaultValue]="DEFAULT_BOARD"
+			(colorChange)="changePropertyColor($event)"
+		></app-color-picker>
+	</div>
+	<button type="button" (click)="resetColors()">
+		reset
+	</button>
+</div>
